@@ -1,0 +1,19 @@
+/*
+ * SASS mixins are declared with the @mixin directive
+ * and used with the @include directive
+ */
+
+@mixin commonTraits {
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 10px;
+}
+body{
+	@include commonTraits;
+}
+footer{
+	@include commonTraits;
+	width: $coolWidth;
+	margin: $centerMargin;
+}
+

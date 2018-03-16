@@ -1,0 +1,89 @@
+/* 
+ * SASS Variables are defined with a $ character
+ * and can have different kinds of data types: color, string, boolean, multi-value
+ */
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+body {
+  max-width: 60em;
+  margin: 0 auto;
+  font-family: serif;
+  background-color: crimson; }
+
+h1, h2 {
+  color: crimson; }
+
+/*
+ * Using SASS mixins with arguments
+ */
+.mypara {
+  background-color: #faa;
+  border-width: 3px;
+  border-color: blue;
+  border-style: dotted; }
+
+/*
+ * SASS mixins are declared with the @mixin directive
+ * and used with the @include directive
+ */
+body {
+  border-radius: 10px;
+  border: 1px solid green;
+  padding: 10px; }
+
+footer {
+  border-radius: 10px;
+  border: 1px solid green;
+  padding: 10px;
+  width: 30em;
+  margin: 0 auto; }
+
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+header {
+  background-color: #fac3ce;
+  border: 4px solid #bbdd0d; }
+  header h1 {
+    color: #3264af;
+    text-align: center; }
+
+/*
+ * SASS Operators example
+ */
+.mypara1 {
+  color: #f00;
+  border: 4px solid #f00;
+  padding: 10px;
+  background-color: #faa; }
+
+/*
+ * Using functions in SASS
+ */
+h1 {
+  color: indigo;
+  background-color: #bebebe; }
+
+h2 {
+  color: #bf69ff; }
+
+h3 {
+  color: #d59cff; }
+
+h4 {
+  color: #e0b5ff; }
+
+.mypara {
+  -mox-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #721ab3;
+  border-width: 4px;
+  border-style: dotted;
+  padding: 20px; }
+
+/*# sourceMappingURL=allstyles.css.map */
