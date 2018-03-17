@@ -108,12 +108,8 @@ figure{
     top: 0;
   }
   .topmenu li{
-    border: 0;
-    border-left: 1px solid lime;
+    border: .2em solid darken(#412d82,2%);
     padding: 0;
-  }
-  .topmenu li:last-child{
-    border-right: 1px solid lime;
   }
 }
 

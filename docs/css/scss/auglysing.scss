@@ -1,14 +1,15 @@
 /* =======================================
  Auglýsingar 
  ========================================= */
-
-.haegri{
-  background-color: #3f7cdb;
-  z-index: 100;
-}
-.vinstri{
-  background-color: #5778b2;
-  z-index: 74;
+@mixin cars{
+  border-radius: 1em;
+  font-size: .7em;
+  line-height: 1em;
+  padding: .1em;
+  width: 2em;
+  height: 3.5em;
+  text-align: center;
+  position: relative;
 }
 .auglysing{
   color: black;
@@ -45,14 +46,7 @@
 }
 .auglysingCar1{
   background-color: orange;
-  border-radius: 1em;
-  font-size: .7em;
-  line-height: 1em;
-  padding: .1em;
-  width: 2em;
-  height: 3.5em;
-  text-align: center;
-  position: relative;
+  @include cars;
   top: 2em;
   left: 2em;
   animation-name: car1;
@@ -63,14 +57,7 @@
 
 .auglysingCar2{
   background-color: yellow;
-  border-radius: 1em;
-  font-size: .7em;
-  line-height: 1em;
-  padding: .1em;
-  width: 2em;
-  height: 3.5em;
-  text-align: center;
-  position: relative;
+  @include cars;
   top: 2em;
   left: 6em;
   animation-name: car2;
@@ -81,14 +68,7 @@
 
 .auglysingCar3{
   background-color: red;
-  border-radius: 1em;
-  font-size: .7em;
-  line-height: 1em;
-  padding: .1em;
-  width: 2em;
-  height: 3.5em;
-  text-align: center;
-  position: relative;
+  @include cars;
   top: 2em;
   left: 10em;
   animation-name: car3;
@@ -99,14 +79,7 @@
 
 .auglysingCar4{
   background-color: blue;
-  border-radius: 1em;
-  font-size: .7em;
-  line-height: 1em;
-  padding: .1em;
-  width: 2em;
-  height: 3.5em;
-  text-align: center;
-  position: relative;
+  @include cars;
   top: 2em;
   left: 14em;
   animation-name: car4;

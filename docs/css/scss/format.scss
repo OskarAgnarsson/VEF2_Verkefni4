@@ -1,21 +1,45 @@
 /* ====== Base litir + padding ====== */
+$myColor: #0d3472;
+
+@mixin background-color1{
+  background-color: darken($myColor, 2%);
+  border: 4px solid darken($myColor, 5%);
+}
+@mixin background-color2{
+  background-color: lighten($myColor, 10%);
+  border: 4px solid darken($myColor, 5%);
+}
+@mixin background-color3{
+  background-color: lighten($myColor, 5%);
+  border: 4px solid darken($myColor, 5%);
+}
+
 
 body {
   line-height: 1.5em;
+  background-color: #4f4f6b;
 }
 header {
-  background-color: #0d3472; 
+  @include background-color3;
 }
 footer {
-  background-color: #6a92d1; 
+  @include background-color3;
 }
 .midja {
-  background-color: #224884;
+  @include background-color1;
   color: white; 
 }
 .vinstri, 
 .haegri { 
   color: white;
+}
+.haegri{
+  @include background-color2;
+  z-index: 100;
+}
+.vinstri{
+  @include background-color2;
+  z-index: 74;
 }
 
 header,
