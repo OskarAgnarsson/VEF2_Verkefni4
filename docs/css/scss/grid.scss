@@ -1,0 +1,158 @@
+*, *:before, *:after {
+    box-sizing: border-box; 
+}
+
+/*heimild: https://gridbyexample.com/examples/example13/ */
+
+/* ====== GRID Area ====== */
+.topnav {
+  grid-area: topnav;
+}
+header {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+footer {
+  grid-area: footer;
+}
+.vinstri{
+  grid-area: vinstri;
+}
+.haegri {
+  grid-area: haegri;
+}
+.midja {
+  grid-area: midja;
+}
+/* ====== GRID Template Areas ===== */
+body {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: 
+    "header"
+    "content"
+    "footer"
+    "topnav";
+}
+
+
+
+/* =======================================
+   Myndvinnsla  
+  ======================================== */
+
+/*  myndir <img> alltaf í 100% stærð munið að vinna og 
+    þjappa myndir í photoshop ! */
+
+img, video{
+  max-width: 100%;
+  height: auto;
+}
+img{
+  display: block;
+}
+figure{
+  margin: 0;
+  border: 1px solid #2b1784;
+}
+.imgProp{
+  width: 162px;
+  padding: .3em;
+}
+/*  ========================================
+  Viðmið - breakpoints 30em = 480px + 
+  ========================================*/
+
+@media screen and (min-width: 30em) {  /* það má ekki setja slaufusvigann í næstu línu, þá virkar ekki viðmiðið */
+
+  .imgProp {
+    display: grid;
+    grid-template-columns: 162px 162px;
+  }
+}
+
+/*  ========================================
+  Viðmið - breakpoints 37.5em = 600px + 
+  ========================================*/
+@media screen and (min-width: 37.5em) {  /* það má ekki setja slaufusvigann í næstu línu, þá virkar ekki viðmiðið */
+  .content {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: 
+    "haegri midja"
+    "vinstri midja";
+  grid-template-columns: 1fr 2fr;
+  }
+}
+/* ========================================
+  Viðmið - breakpoints 48em = 760px +
+  ======================================== */
+@media screen and (min-width: 48em) {  /* það má ekki setja slaufusvigann í næstu línu, þá virkar ekki viðmiðið */
+  body {
+    grid-template-areas: 
+    "topnav"
+    "header"
+    "content"
+    "footer"
+  }
+  .topnav label{
+    display: none;
+  }
+  .topmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    position: relative;
+    top: 0;
+  }
+  .topmenu li{
+    border: 0;
+    border-left: 1px solid lime;
+    padding: 0;
+  }
+  .topmenu li:last-child{
+    border-right: 1px solid lime;
+  }
+}
+
+/* ========================================
+  Viðmið - breakpoints 60em = 960px +
+  ======================================== */
+@media screen and (min-width: 60em) {  /* það má ekki setja slaufusvigann í næstu línu, þá virkar ekki viðmiðið */
+  body{
+    max-width: 58em;
+    margin: 0 auto;
+  }
+  .boxset{
+    flex-flow: column;
+    position: fixed;
+    top: 5em;
+    left:0;
+  }
+  .boxset a{
+    margin: 0;
+  }
+  .content {
+  grid-template-areas: 
+    "vinstri midja haegri";
+  grid-template-columns: 1fr 3fr 1fr;
+  }
+  .imgProp {
+    grid-template-columns: repeat(4,83.4%)
+  }
+}
+/* ========================================
+  Viðmið - breakpoints 80em = 1600px +
+  ======================================== */
+
+@media screen and (min-width: 80em) {  /* það má ekki setja slaufusvigann í næstu línu, þá virkar ekki viðmiðið */
+  body{
+    max-width: 78em;
+    margin: 0 auto;
+  }
+  .imgProp {
+    grid-template-columns: repeat(4,100%)
+  }
+}

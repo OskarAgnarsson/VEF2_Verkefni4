@@ -1,0 +1,45 @@
+/* ====== Base litir + padding ====== */
+
+body {
+  line-height: 1.5em;
+}
+header {
+  background-color: #0d3472; 
+}
+footer {
+  background-color: #6a92d1; 
+}
+.midja {
+  background-color: #224884;
+  color: white; 
+}
+.vinstri, 
+.haegri { 
+  color: white;
+}
+
+header,
+footer,
+.midja,
+.vinstri, 
+.haegri {
+  padding: 1em; 
+}
+
+/* ====== leturstílar ====== */
+
+header h1 {
+  color: #fff;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.midja h2 {
+  margin: .7em 0 .8em 0;
+}
+.midja h4 {
+  text-align: justify;
+  margin: .4em 0;
+}
+.midja p {
+  text-align: justify;
+}

@@ -1,0 +1,153 @@
+/* =======================================
+ Auglýsingar 
+ ========================================= */
+
+.haegri{
+  background-color: #3f7cdb;
+  z-index: 100;
+}
+.vinstri{
+  background-color: #5778b2;
+  z-index: 74;
+}
+.auglysing{
+  color: black;
+  width: 15em;
+  height: 30em;
+  padding: 1em;
+  background-color: #5b5b5b;
+  border: .3em solid black;
+  align-items: center;
+}
+.auglysingCars{
+  display: flex;
+  flex-flow: row;
+}
+@keyframes car1 {
+  0% { top: 2em; left: 4em; }
+  100% { top:20em; left: 4em; }
+}
+@keyframes car2 {
+  0% { top: 2em; left: 5em; }
+  100% { top:22em; left: 5em; }
+}
+@keyframes car3 {
+  0% { top: 2em; left: 6em; }
+  100% { top:19em; left: 6em; }
+}
+@keyframes car4 {
+  0% { top: 2em; left: 7em; }
+  100% { top:21em; left: 7em; }
+}
+@keyframes texti {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.auglysingCar1{
+  background-color: orange;
+  border-radius: 1em;
+  font-size: .7em;
+  line-height: 1em;
+  padding: .1em;
+  width: 2em;
+  height: 3.5em;
+  text-align: center;
+  position: relative;
+  top: 2em;
+  left: 2em;
+  animation-name: car1;
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+  z-index: 12;
+}
+
+.auglysingCar2{
+  background-color: yellow;
+  border-radius: 1em;
+  font-size: .7em;
+  line-height: 1em;
+  padding: .1em;
+  width: 2em;
+  height: 3.5em;
+  text-align: center;
+  position: relative;
+  top: 2em;
+  left: 6em;
+  animation-name: car2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  z-index: 12;
+}
+
+.auglysingCar3{
+  background-color: red;
+  border-radius: 1em;
+  font-size: .7em;
+  line-height: 1em;
+  padding: .1em;
+  width: 2em;
+  height: 3.5em;
+  text-align: center;
+  position: relative;
+  top: 2em;
+  left: 10em;
+  animation-name: car3;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: 12;
+}
+
+.auglysingCar4{
+  background-color: blue;
+  border-radius: 1em;
+  font-size: .7em;
+  line-height: 1em;
+  padding: .1em;
+  width: 2em;
+  height: 3.5em;
+  text-align: center;
+  position: relative;
+  top: 2em;
+  left: 14em;
+  animation-name: car4;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  z-index: 12;
+}
+.finishLine{
+  color: black;
+  background-color: white;
+  margin: 0 auto;
+  padding: .3em;
+  position: relative;
+  text-align: center;
+  width: 9.5em;
+  height: 2em;
+  top: 5em;
+  right: .6em;
+  font-size: 1.5em;
+  z-index: 11;
+}
+.auglysingText{
+  position: relative;
+  width: 6em;
+  padding: 1em;
+  border-radius: 1em/2em;
+  text-align: center;
+  background-color: blue;
+  border: outset #264577;
+  color: white;
+  opacity: 0;
+  top: 13em;
+  left: 3em;
+  animation-name: texti;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  z-index: 70;
+}
+.auglysingText label{
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+}

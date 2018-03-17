@@ -1,0 +1,103 @@
+/* ========================================
+  Efnisyfirlit
+  ======================================== */
+.topnav input{
+  display: none;
+}
+.topnav label{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  color: white;
+  background-color: #246bd8;
+  font-size: 1.1em;
+  border: 3px outset #265399;
+  text-align: center;
+  padding: 0.2em;
+  cursor: pointer;
+}
+.topnav input:checked ~ .topmenu{
+  position: fixed;
+  bottom: 3em;
+  left: 0;
+}
+.topnav input:checked ~ label{
+  background-color: #15458e;
+  border: 3px inset #265399;
+  color: rgba(150,150,255,1)
+}
+.topmenu {
+  display: block;
+  position: fixed;
+  bottom: -15em;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  background-color: black;
+  list-style: none; 
+  width: 100%;
+  z-index: 90;
+  transition: all .5s ease;
+}
+.topmenu li {
+  border: 0;
+  border-bottom: 1px solid lime; 
+  padding: 0;
+}
+
+.topmenu a {
+  display: block;     /* ath! */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: .4em 2em; 
+}
+.topmenu a:active{
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+
+
+/* ==========================================
+  Box
+==========================================*/
+
+.boxset{
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2em;
+}
+.boxset div{
+  height: 2.5em;
+  width: 2.5em;
+  margin: 0;
+  padding: .5em 0 0;
+}
+.boxset a{
+  display: block;
+  margin:0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+.box1{
+  background-color: midnightblue;
+}
+.box2{
+  background-color: lightgray;
+}
+.box3{
+  background-color: pink;
+}
+.box4{
+  background-color: black;
+}
+span{
+  font-size: 2em;
+}
